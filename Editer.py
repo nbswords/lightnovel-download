@@ -166,10 +166,6 @@ class Editer(object):
     def get_chap_text(self, url, chap_name, is_color=False):
         print(chap_name)
         content_html = self.get_html(url, is_gbk=True)
-        # Debug: 輸出章節頁 HTML
-        # debug_filename = f'chap_debug_{check_chars(chap_name)}.html'
-        # with open(debug_filename, 'w', encoding='utf-8') as f:
-        #     f.write(content_html)
         bf = BeautifulSoup(content_html, 'html.parser')
         text_with_head = bf.find('div', {'id': 'content'})
         text_chap = ''
