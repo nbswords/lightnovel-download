@@ -84,6 +84,7 @@ class Editer(object):
         driver.get(url)
         time.sleep(15)  # 等待 Cloudflare 驗證
         html = driver.page_source
+        driver.quit()
         # 若還是 Cloudflare 頁面則直接報錯
         if 'Just a moment...' in html or 'cf-browser-verification' in html or 'Cloudflare' in html:
             raise Exception(
