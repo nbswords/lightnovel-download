@@ -6,6 +6,8 @@
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EPUB下載器
 </h1>
 
+**鑒於原版repo已無法正常抓取，本repo使用selenium改寫了原版的抓取功能來繞過Cloudflare，其他功能相同**
+
 [文庫吧/輕小說文庫](www.wenku8.net)(wenku8)網站小說下載，EPUB打包。
 
 特性：
