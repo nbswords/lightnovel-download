@@ -79,6 +79,9 @@ class Editer(object):
         options.add_argument('--headless')  # 啟用 headless 模式
         options.add_argument('--disable-gpu')
         options.add_argument('--no-sandbox')
+        options.add_argument("--log-level=3")  # 僅錯誤級別
+        options.add_argument("--disable-logging")  # 禁用日誌（某些版本支援）
+        options.add_argument("--disable-logging-redirect")  # 防止日誌被導向
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=options)
         driver.get(url)
