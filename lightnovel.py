@@ -24,13 +24,6 @@ def query_chaps(book_no):
     print('*******************************')
     print('请输入所需要的卷号进行下载（多卷可以用英文逗号分隔或直接使用连字符，详情见说明）')
 
-temp_path = ''
-
-def delete_tmp():
-    print(temp_path)
-    if os.path.exists(temp_path): 
-        shutil.rmtree(temp_path)
-
 def download_single_volume(root_path,
                            book_no,
                            volume_no,
@@ -48,7 +41,6 @@ def download_single_volume(root_path,
         return
     print(editer.title + '-' + editer.volume['book_name'], editer.author)
     print('****************************')
-    temp_path = editer.temp_path
     editer.check_volume(is_gui=is_gui, signal=hang_signal, editline=edit_line_hang)
     print('正在下载文本....')
     print('*********************') 
