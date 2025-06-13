@@ -17,7 +17,7 @@
 ## 介紹
 
 鑒於原版repo已無法正常抓取，本repo使用selenium改寫了原版的抓取功能來繞過Cloudflare，功能基本相同
-- [release](https://github.com/nbswords/lightnovel-download/releases)有打包好的exe可執行程式，包括圖形化版本和命令列版本（系統最低要求Windows 10）
+- [release](https://github.com/nbswords/lightnovel-download/releases)有打包好的exe可執行程式（系統最低要求Windows 10）
 - 若遇上`输入卷号超过实际卷数！`的錯誤，請連上香港VPN後再重新執行
 - 由於`cloudscraper`也無法繞過輕小說文庫的Cloudflare，因此使用selenium，但selenium的缺點就是很慢，平均下載一本小說需要5~10分鐘左右，若覺得還有改進的空間歡迎提PR
 
